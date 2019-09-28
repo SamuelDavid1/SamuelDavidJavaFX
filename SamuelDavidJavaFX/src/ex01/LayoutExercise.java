@@ -32,7 +32,6 @@ public class LayoutExercise extends Application {
 		
 		VBox v1 = new VBox();
 		v1.getChildren().addAll(btn1, btn2, btn3, btn4);
-		v1.setSpacing(5);
 		
 		
 		HBox h1 = new HBox();

@@ -19,7 +19,7 @@ public class CalculatorView {
 		
 		GridPane pane = new GridPane();
 		lblResult = new Label();
-		pane.add(lblResult, 0, 0);
+		pane.add(lblResult, 0, 0, 3, 1);
 		
 		b1 = new Button();
 		b1.setText("1");
@@ -70,6 +70,7 @@ public class CalculatorView {
 		pane.add(bResult, 2, 4);
 		
 		Scene scene = new Scene(pane);
+		scene.getStylesheets().add(getClass().getResource("CalculatorMVC.css").toExternalForm());
 		stage.setScene(scene);
 		
 	}
